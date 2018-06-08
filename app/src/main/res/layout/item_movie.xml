@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:elevation="@dimen/default_elevation">
+
+
+    <ImageView
+        android:id="@+id/movieImageIMG"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_splash"
+        diagonal:layout_constraintBottom_toBottomOf="parent"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintHorizontal_bias="0.031"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toTopOf="parent"
+        diagonal:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/titleLabelTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintHorizontal_bias="0.0"
+        diagonal:layout_constraintStart_toEndOf="@+id/imageView3"
+        diagonal:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/releaseDateTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintHorizontal_bias="0.0"
+        diagonal:layout_constraintStart_toEndOf="@+id/imageView4"
+        diagonal:layout_constraintTop_toBottomOf="@+id/titleLabelTXT" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        diagonal:layout_constraintStart_toEndOf="@+id/movieImageIMG"
+        diagonal:layout_constraintTop_toTopOf="parent"
+        diagonal:srcCompat="@drawable/ic_title" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        diagonal:layout_constraintStart_toEndOf="@+id/movieImageIMG"
+        diagonal:layout_constraintTop_toBottomOf="@+id/imageView3"
+        diagonal:srcCompat="@drawable/ic_movie_date" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        diagonal:layout_constraintStart_toEndOf="@+id/movieImageIMG"
+        diagonal:layout_constraintTop_toBottomOf="@+id/imageView4"
+        diagonal:srcCompat="@drawable/ic_stars_yellow" />
+
+    <TextView
+        android:id="@+id/mediaTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        diagonal:layout_constraintStart_toEndOf="@+id/imageView5"
+        diagonal:layout_constraintTop_toBottomOf="@+id/releaseDateTXT" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="PATH_GET_IMAGE">http://image.tmdb.org/t/p/original</string>
+    <string name="API_V3_MOVIES_KEY">0174862c2d5f6d622dc1e8d63894428c</string>
+    <string name="API_V4_MOVIES_KEY">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTc0ODYyYzJkNWY2ZDYyMmRjMWU4ZDYzODk0NDI4YyIsInN1YiI6IjViMTdkMWNiMGUwYTI2MmRlZTAyMzAwZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.4uuZp_xFx6pwBSK_E10MQXEdeekIkvSpk5tXPBeLgyI</string>
+    <string name="app_name">Teste  Movies</string>
+</resources>
