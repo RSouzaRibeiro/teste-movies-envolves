@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import br.com.rafaelsouza.testemovies.R
 import br.com.rafaelsouza.testemovies.model.Movie
 import br.com.rafaelsouza.testemovies.scenes.details.DetailsActivity
+import com.squareup.picasso.NetworkPolicy
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_movie.view.*
 
@@ -30,9 +31,11 @@ class MainAdapter(val context: Context, val listMovies: ArrayList<Movie>):  Recy
         holder.itemView.mediaTXT.text = movie.media
         holder.itemView.releaseDateTXT.text = movie.dateRelease
 
-        /*Picasso.with(context)
+        Picasso.with(context)
                 .load(context.getString(R.string.PATH_GET_IMAGE)+movie.imagePath)
-                .into(holder.itemView.movieImageIMG)*/
+                .placeholder(R.drawable.progress_animation)
+                .networkPolicy(NetworkPolicy.OFFLINE)
+                .into(holder.itemView.movieImageIMG)
 
         holder.itemView.setOnClickListener {
             val intent = Intent(context, DetailsActivity::class.java)
